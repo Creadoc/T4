@@ -9,6 +9,7 @@ import NotAPage from "./pages/NotAPage";
 import ForgotPassword from "./pages/ForgotPassword";
 import Home from "./pages/Home";
 import EditProfile from "./pages/EditProfile";
+import TournamentList from "./pages/TournamentList";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/ForgotPassword" element={<ForgotPassword />} />
           <Route path="/ViewProfile" element={<ViewProfile />} />
           <Route path="/NotAPage" element={<NotAPage />} />
+          <Route path="/TournamentList" element={<TournamentList />} />
         </Routes>
       </Layout>
     </div>

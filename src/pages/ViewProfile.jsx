@@ -2,7 +2,9 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import img from "../assets/blank-profile-picture.png";
-
+/*
+  shorten and center form
+*/
 function ViewProfile() {
   return (
     <div>

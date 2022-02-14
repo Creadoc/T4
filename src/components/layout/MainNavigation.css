@@ -4,7 +4,6 @@
 }
 .logo{
   max-width: 80%;
-  margin-left: -80%;
 }
 .btn{
   float: right;
@@ -76,9 +75,9 @@
   font-size: 1.3em;
 }
 .upcoming{
-  margin-top: 20%;
+  margin-top: 10%;
   margin-bottom: 5%;
-  
+  max-width: 100%;
 }
 .upcoming li{
   float: left;
