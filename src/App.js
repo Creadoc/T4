@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import ViewPlayer from "./pages/ViewPlayer";
-import SecondPage from "./pages/secondPage";
 import Login from "./pages/Login";
 import Layout from "./components/layout/Layout";
 import PageList from "./pages/PageList";
@@ -9,6 +8,7 @@ import ViewProfile from "./pages/ViewProfile";
 import NotAPage from "./pages/NotAPage";
 import ForgotPassword from "./pages/ForgotPassword";
 import Home from "./pages/Home";
+import EditProfile from "./pages/EditProfile";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/ViewPlayer" element={<ViewPlayer />} />
-          <Route path="/secondPage" element={<SecondPage />} />
+          <Route path="/EditProfile" element={<EditProfile />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/PageList" element={<PageList />} />
           <Route path="/JustATestFile" element={<JustATestFile />} />

@@ -33,8 +33,8 @@ function MainNavigation() {
               </Container>
             </Nav>
             <NavDropdown title="Player1" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Edit Profile</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Logout</NavDropdown.Item>
+              <NavDropdown.Item href="/ViewProfile">Edit Profile</NavDropdown.Item>
+              <NavDropdown.Item href="#">Logout</NavDropdown.Item>
             </NavDropdown>
 
             <img className="profile" src={profile} />
