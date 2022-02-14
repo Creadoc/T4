@@ -13,13 +13,14 @@ function MainNavigation() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/TournamentList">Tournaments</Nav.Link>
-              <Nav.Link href="#">Page</Nav.Link>
+              <Nav.Link href="/Leaderboards">Leaderboards</Nav.Link>
               <NavDropdown title="Pages" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/Login">Login</NavDropdown.Item>
                 <NavDropdown.Item href="/Register">Register</NavDropdown.Item>
                 <NavDropdown.Item href="/ViewPlayer">View Player</NavDropdown.Item>
-                <NavDropdown.Item href="ViewProfile">View Profile</NavDropdown.Item>
-                <NavDropdown.Item href="ForgotPassword">Forgot Password</NavDropdown.Item>
+                <NavDropdown.Item href="/ViewProfile">View Profile</NavDropdown.Item>
+                <NavDropdown.Item href="/ForgotPassword">Forgot Password</NavDropdown.Item>
+                <NavDropdown.Item href=""></NavDropdown.Item>
               </NavDropdown>
               <Container>
                 <Form>
@@ -36,7 +37,6 @@ function MainNavigation() {
               <NavDropdown.Item href="/ViewProfile">Edit Profile</NavDropdown.Item>
               <NavDropdown.Item href="#">Logout</NavDropdown.Item>
             </NavDropdown>
-
             <img className="profile" src={profile} />
           </Navbar.Collapse>
         </Container>
