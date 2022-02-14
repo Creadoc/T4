@@ -1,0 +1,108 @@
+.page-footer{
+  background-color: #212529;
+  color: white;
+}
+.logo{
+  max-width: 80%;
+  margin-left: -80%;
+}
+.btn{
+  float: right;
+  margin-top: -18.5%;
+}
+.navbar{
+  color: white;
+}
+.profile{
+  height: auto;
+  max-width: 5%;
+  margin-top: 0%;
+}
+.playerContainer{
+  width: 21.8%;
+  margin: auto;
+}
+.viewStats{
+  margin: auto;
+  margin-left: 85%;
+  margin-bottom: 10%;
+}
+.tournaments{
+  margin: auto;
+  margin-left: 85%;
+  margin-bottom: 10%;
+}
+.forgotPasswordContainer{
+  height: 35em;
+}
+#collasible-nav-dropdown{
+  color: white;
+}
+.loginImg{
+  float: right;
+}
+.loginBtn{
+  margin: auto;
+}
+.formContainer{
+  max-width: 50%;
+  margin: auto;
+}
+.forgotPasswordContainer{
+  max-width: 50%;
+  margin:auto;
+}
+.forgotBtn{
+  margin: auto;
+}
+.loginContainer{
+  margin-top: 5%;
+  height: 31em;
+}
+.bg{
+  margin-top: -15%;
+  max-width: 100%;
+  z-index: -1;
+}
+.welcome{
+  color: white;
+  margin-top: -25%;
+  font-size: 5em;
+  text-align: center;
+}
+.intro{
+  color: white;
+  text-align: center;
+  font-size: 1.3em;
+}
+.upcoming{
+  margin-top: 20%;
+  margin-bottom: 5%;
+  
+}
+.upcoming li{
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  list-style-type:none;
+}
+.homeContainer{
+  height: 100em;
+  max-width: 100%;
+}
+.resize{
+  max-width: 5%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.socials li{
+  list-style-type:none;
+}
+.moreTournies{
+  margin-top: 150%;
+}
+@media (max-width: 991px){
+  .btn{
+    margin-top: -6.1%;
+  }
+}
