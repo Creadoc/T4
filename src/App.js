@@ -10,6 +10,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import Home from "./pages/Home";
 import EditProfile from "./pages/EditProfile";
 import TournamentList from "./pages/TournamentList";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/EditProfile" element={<EditProfile />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/PageList" element={<PageList />} />
+          <Route path="/Register" element={<Register />} />
           <Route path="/JustATestFile" element={<JustATestFile />} />
           <Route path="/ForgotPassword" element={<ForgotPassword />} />
           <Route path="/ViewProfile" element={<ViewProfile />} />
