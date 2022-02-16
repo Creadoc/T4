@@ -1,3 +1,10 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 .page-footer{
   background-color: #212529;
   color: white;

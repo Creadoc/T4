@@ -15,7 +15,7 @@ import Leaderboard from "./pages/Leaderboard";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Layout>
         <Routes>
           <Route exact path="/" element={<Home />} />
