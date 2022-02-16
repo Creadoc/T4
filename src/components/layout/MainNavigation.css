@@ -86,7 +86,7 @@
   list-style-type: none;
 }
 .homeContainer {
-  height: 100em;
+  height: 60em;
   max-width: 100%;
 }
 .resize {
@@ -143,4 +143,24 @@
   border: 5px solid black;
   padding: 25px;
   margin: auto;
+}
+
+.featured {
+  margin-bottom: 5%;
+  max-width: 100%;
+}
+
+.featured li {
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  list-style-type: none;
+}
+table,
+th,
+td {
+  border: 10px solid black;
+}
+thead {
+  background-color: white;
 }

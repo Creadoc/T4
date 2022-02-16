@@ -1,6 +1,5 @@
 import React from "react";
 import RegisterForm from "../components/layout/RegisterForm";
-import bg from "../assets/homeBG.png";
 
 function Register() {
   return (
