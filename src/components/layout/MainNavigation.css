@@ -7,6 +7,7 @@
 }
 .btn{
   float: right;
+  transform: scale(1.01);
   margin-top: -18.5%;
 }
 .navbar{
@@ -58,10 +59,19 @@
   margin-top: 5%;
   height: 31em;
 }
+.header{
+  grid-column: 1/5;
+  max-width: 100%;
+}
 .bg{
   margin-top: -15%;
-  max-width: 100%;
+  max-width: 105%;
+  margin-left: -2.8%;
   z-index: -1;
+}
+.bg-text{
+  font-size: 1vw;
+  max-width: 100%;
 }
 .welcome{
   color: white;
@@ -75,6 +85,8 @@
   font-size: 1.3em;
 }
 .upcoming{
+  grid-column: 1/5;
+  grid-row: 15;
   margin-top: 10%;
   margin-bottom: 5%;
   max-width: 100%;
@@ -86,8 +98,10 @@
   list-style-type:none;
 }
 .homeContainer{
-  height: 100em;
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px 5%;
+  grid-template-rows: minmax(100px, auto);
 }
 .resize{
   max-width: 5%;
@@ -121,6 +135,9 @@
 }
 @media (max-width: 991px){
   .btn{
-    margin-top: -6.1%;
+    margin-top: -8.5%;
+  }
+  .profile{
+    display: none;
   }
 }
