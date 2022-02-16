@@ -1,25 +1,39 @@
 import { Link } from "react-router-dom";
 import "./MainNavigation.css";
-import { Nav, Navbar, Container, NavDropdown, Form } from 'react-bootstrap';
-import logo from "../../assets/SMTB.PNG"
+import { Nav, Navbar, Container, NavDropdown, Form } from "react-bootstrap";
+import logo from "../../assets/SMTB.PNG";
 import profile from "../../assets/blank-profile-picture.png";
 function MainNavigation() {
   return (
     <>
-      <Navbar className="navbar" collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar
+        className="navbar"
+        collapseOnSelect
+        expand="lg"
+        bg="dark"
+        variant="dark"
+      >
         <Container>
-          <Navbar.Brand href="/Home"><img className="logo" src={logo} /></Navbar.Brand>
+          <Navbar.Brand href="/Home">
+            <img className="logo" src={logo} />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/TournamentList">Tournaments</Nav.Link>
-              <Nav.Link href="/Leaderboards">Leaderboards</Nav.Link>
+              <Nav.Link href="/Leaderboard">Leaderboards</Nav.Link>
               <NavDropdown title="Pages" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/Login">Login</NavDropdown.Item>
                 <NavDropdown.Item href="/Register">Register</NavDropdown.Item>
-                <NavDropdown.Item href="/ViewPlayer">View Player</NavDropdown.Item>
-                <NavDropdown.Item href="/ViewProfile">View Profile</NavDropdown.Item>
-                <NavDropdown.Item href="/ForgotPassword">Forgot Password</NavDropdown.Item>
+                <NavDropdown.Item href="/ViewPlayer">
+                  View Player
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/ViewProfile">
+                  View Profile
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/ForgotPassword">
+                  Forgot Password
+                </NavDropdown.Item>
                 <NavDropdown.Item href=""></NavDropdown.Item>
               </NavDropdown>
               <Container>
@@ -34,7 +48,9 @@ function MainNavigation() {
               </Container>
             </Nav>
             <NavDropdown title="Player1" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/ViewProfile">Edit Profile</NavDropdown.Item>
+              <NavDropdown.Item href="/ViewProfile">
+                Edit Profile
+              </NavDropdown.Item>
               <NavDropdown.Item href="#">Logout</NavDropdown.Item>
             </NavDropdown>
             <img className="profile" src={profile} />
