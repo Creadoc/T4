@@ -1,5 +1,4 @@
 import React from "react";
-import login from "../assets/login.png";
 import LoginForm from "../components/layout/LoginForm";
 
 function Login() {

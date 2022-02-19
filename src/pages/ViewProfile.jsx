@@ -9,7 +9,9 @@ function ViewProfile() {
   return (
     <div>
       <div className="profilePic">
-        <p><img className="profileImg" src={img} /></p>
+        <p>
+          <img className="profileImg" src={img} />
+        </p>
         <button className="uploadBtn" variant="primary" type="submit">
           Upload
         </button>
@@ -18,12 +20,12 @@ function ViewProfile() {
         </button>
       </div>
       <Form>
-        <Form.Group className="mb-3 fname" controlId="formBasicEmail">
+        <Form.Group className="mb-3 fname" controlId="formBasicFname">
           <Form.Label>First Name</Form.Label>
           <Form.Control type="firstName" placeholder="Enter First Name" />
         </Form.Group>
 
-        <Form.Group className="mb-3 lname" controlId="formBasicEmail">
+        <Form.Group className="mb-3 lname" controlId="formBasicLname">
           <Form.Label>Last Name</Form.Label>
           <Form.Control type="lastName" placeholder="Enter Last Name" />
         </Form.Group>
@@ -36,7 +38,7 @@ function ViewProfile() {
           </Form.Text>
         </Form.Group>
 
-        <Form.Group className="mb-3 phone" controlId="formBasicEmail">
+        <Form.Group className="mb-3 phone" controlId="formBasicPhone">
           <Form.Label>Phone Number</Form.Label>
           <Form.Control type="email" placeholder="Enter Phone Number" />
           <Form.Text className="text-muted">
@@ -48,15 +50,13 @@ function ViewProfile() {
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicCheckbox"></Form.Group>
         <button className="updateBtn" variant="primary" type="submit">
           Update
         </button>
         <button className="editBtn" variant="primary" type="submit">
           Edit Profile
         </button>
-
       </Form>
     </div>
   );

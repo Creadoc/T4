@@ -12,7 +12,7 @@ function RegisterForm() {
         </Form.Text>
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" controlId="formBasicUsername">
         <Form.Label>Username</Form.Label>
         <Form.Control type="username" placeholder="Username" />
       </Form.Group>
@@ -22,17 +22,17 @@ function RegisterForm() {
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" controlId="formBasicFirstName">
         <Form.Label>First Name</Form.Label>
         <Form.Control type="fname" placeholder="First Name" />
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" controlId="formBasicLastName">
         <Form.Label>Last Name</Form.Label>
         <Form.Control type="lname" placeholder="Last Name" />
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" controlId="formBasicPhone">
         <Form.Label>Phone Number</Form.Label>
         <Form.Control type="phone" placeholder="Phone Number" />
       </Form.Group>
