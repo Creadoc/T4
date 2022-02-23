@@ -9,7 +9,7 @@ function LoginForm() {
   const [loginStatus, setLoginStatus] = useState("");
 
   const login = () => {
-    Axios.post("http://localhost:3001/email", {
+    Axios.post("http://localhost:3001/emailLogin", {
       email: email,
       password: password,
     }).then((response) => {
