@@ -104,9 +104,9 @@ function RegisterForm() {
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
       </Form>
-      <button className="registerBtn" variant="primary" onClick={register}>
+      <Button className="registerBtn" variant="primary" onClick={register}>
         Register
-      </button>
+      </Button>
       <div>{stat}</div>
     </>
   );
