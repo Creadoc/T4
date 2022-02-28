@@ -9,7 +9,7 @@ function Player() {
   return (
 
     <div className="playerContainer">
-      <Card border="dark" style={{ width: '22rem' }}>
+      <Card className="playerCard" border="dark">
         <Card.Img src={profile}/>
         <Card.Body>
           <Card.Title className="text-center">Player1</Card.Title>

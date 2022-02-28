@@ -26,7 +26,7 @@ body{
   margin-top: 0%;
 }
 .playerContainer{
-  width: 21.8%;
+  max-width: 21.8%;
   margin: auto;
 }
 .viewStats{
@@ -140,11 +140,65 @@ body{
 .uploadBtn{
   margin-left: 3%;
 }
+.registerBtn{
+    float: left;
+    margin-top: 0%;
+  }
+  .registerContainer{
+    margin-bottom: 5%;
+  }
+  .playerCard{
+    width: 22rem;
+  }
 @media (max-width: 991px){
   .btn{
-    margin-top: -8.5%;
+    margin-top: -6%;
   }
   .profile{
     display: none;
+  }
+  .loginButton{
+    margin-top: 20%;
+    float: left;
+    margin-left: 20%;
+  }
+  .registerBtn{
+    float: left;
+    margin-top: 0%;
+  }
+  .registerContainer{
+    margin-bottom: 15%;
+  }
+  .playerContainer{
+    margin: 0;
+  }
+  .playerCard{
+    width: 15rem;
+  }
+  .viewStats, .tournaments{
+    margin-left: 40%;
+  }
+  .uploadBtn{
+  margin-left: -30%;
+  margin-bottom: 5%;
+}
+.profileImg{
+  max-width: 60%;
+  margin-left: -15%;
+}
+}
+@media(max-width: 500px){
+  .btn{
+    margin-top: -11.7%;
+  }
+}
+@media(max-width: 375px){
+  .btn{
+    margin-top: -13.7%;
+  }
+}
+@media(max-width: 320px){
+  .btn{
+    margin-top: -17%;
   }
 }

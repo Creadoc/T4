@@ -53,6 +53,7 @@ function LoginForm() {
         <Form.Group className="mb-3" controlId="formBasicCheckbox"></Form.Group>
         <div className="loginButton"></div>
       </Form>
+      <div className="loginButton">
       <Button
         className="loginBtn"
         variant="primary"
@@ -60,7 +61,8 @@ function LoginForm() {
         onClick={login}
       >
         Login
-      </Button>
+        </Button>
+      </div>
       <div>{loginStatus}</div>
     </>
   );
