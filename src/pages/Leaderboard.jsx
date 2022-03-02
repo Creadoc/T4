@@ -9,11 +9,11 @@ import pfp_Player1 from "../assets/pfp_Player1.jpg";
 
 function Leaderboard() {
   return (
-    <div className="homeContainer">
+    <div className="featured">
       <div className="featured li">
         <h1>Featured Players:</h1>
         <div class="card-group">
-          <Card border="dark" style={{ width: "13rem" }}>
+          <Card className="leaderboardCard" border="dark" style={{ width: "13rem" }}>
             <Card.Img src={pfp_Player1} />
             <Card.Body>
               <Card.Title className="">Player1</Card.Title>
@@ -29,7 +29,7 @@ function Leaderboard() {
             </Card.Body>
           </Card>
 
-          <Card border="dark" style={{ width: "13rem" }}>
+          <Card className="leaderboardCard2" border="dark" style={{ width: "13rem" }}>
             <Card.Img src={pfp_UAGamer7} />
             <Card.Body>
               <Card.Title className="">UAGamer7</Card.Title>
@@ -45,7 +45,7 @@ function Leaderboard() {
             </Card.Body>
           </Card>
 
-          <Card border="dark" style={{ width: "13rem" }}>
+          <Card className="leaderboardCard3" border="dark" style={{ width: "13rem" }}>
             <Card.Img src={pfp_AMackey100} />
             <Card.Body>
               <Card.Title className="">AMackey100</Card.Title>

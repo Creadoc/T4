@@ -10,10 +10,12 @@ function ForgotPassword() {
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
                     <Form.Text className="text-muted">
-                        Enter your email and we'll send you a reset password email.
+                        &nbsp;
                     </Form.Text>
                 </Form.Group>
-                <Button className="forgotBtn" variant="primary">Submit</Button>
+                <div className="forgotButton">
+                    <Button className="forgotBtn" variant="primary">Submit</Button>
+                </div>
             </Form>
         </div>
     );

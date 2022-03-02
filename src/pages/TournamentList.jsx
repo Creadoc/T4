@@ -3,14 +3,15 @@ import Table from 'react-bootstrap/Table'
 
 function TournamentList() {
     return (
-        <Table responsive>
+        <Table responsive className="tournamentTable">
             <thead>
                 <tr>
-                    <th>Tournament</th>
-                    <th>Location</th>
-                    <th>Time</th>
-                    <th>Date</th>
-                    <th>Description</th>
+                    <th className="col1">Tournament</th>
+                    <th className="col2">Location</th>
+                    <th className="col3">Time</th>
+                    <th className="col4">Date</th>
+                    <th className="col5">Description</th>
+                    <th className="col6"></th>
                 </tr>
             </thead>
             <tbody>
@@ -20,6 +21,7 @@ function TournamentList() {
                     <td>7:00 p.m.</td>
                     <td>November 10th, 2025</td>
                     <td>Description of tournament</td>
+                    <td><button className="editBtn">Register</button></td>
                 </tr>
 
                 <tr>
@@ -28,6 +30,7 @@ function TournamentList() {
                     <td>7:00 p.m.</td>
                     <td>November 10th, 2025</td>
                     <td>Description of tournament</td>
+                    <td><button className="editBtn">Register</button></td>
                 </tr>
 
                 <tr>
@@ -36,6 +39,7 @@ function TournamentList() {
                     <td>7:00 p.m.</td>
                     <td>November 10th, 2025</td>
                     <td>Description of tournament</td>
+                    <td><button className="editBtn">Register</button></td>
                 </tr>
             </tbody>
         </Table>
