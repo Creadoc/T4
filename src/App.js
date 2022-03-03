@@ -32,17 +32,6 @@ function App() {
     <div className="app">
       <Layout>
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-
-          <Route path="/Leaderboard" element={<Leaderboard />} />
-          <Route path="/PageList" element={<PageList />} />
-          <Route path="/Register" element={<Register />} />
-          <Route path="/JustATestFile" element={<JustATestFile />} />
-          <Route path="/ForgotPassword" element={<ForgotPassword />} />
-
-          <Route path="/NotAPage" element={<NotAPage />} />
-          <Route path="/TournamentList" element={<TournamentList />} />
           {user && (
             <>
               <Route
@@ -64,7 +53,17 @@ function App() {
               />
             </>
           )}
+          <Route exact path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
 
+          <Route path="/Leaderboard" element={<Leaderboard />} />
+          <Route path="/PageList" element={<PageList />} />
+          <Route path="/Register" element={<Register />} />
+          <Route path="/JustATestFile" element={<JustATestFile />} />
+          <Route path="/ForgotPassword" element={<ForgotPassword />} />
+
+          <Route path="/NotAPage" element={<NotAPage />} />
+          <Route path="/TournamentList" element={<TournamentList />} />
           {/* <Route
             path="*"
             element={<Navigate to={user ? "/NotAPage" : "/Login"} />}
