@@ -25,7 +25,6 @@ function Login({ authenticate }) {
   };
 
   const login = () => {
-    getAll();
     Axios.post("http://localhost:3001/emailLogin", {
       email: email,
       password: password,
@@ -40,6 +39,7 @@ function Login({ authenticate }) {
         console.log(response.data[0].username);
         console.log(response.data[0]);
         authenticate();
+        //getAll();
       }
     });
   };
