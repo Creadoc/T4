@@ -2,6 +2,7 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import img from "../assets/blank-profile-picture.png";
+import Profile from "../components/Profile";
 /*
   shorten and center form
 */
@@ -12,10 +13,10 @@ function ViewProfile() {
         <p>
           <img className="profileImg" src={img} />
         </p>
-        <button className="uploadBtn" variant="primary" type="submit">
+        <button className=" editBtn uploadBtn" variant="primary" type="submit">
           Upload
         </button>
-        <button className="removeBtn" variant="primary" type="submit">
+        <button className="editBtn removeBtn" variant="primary" type="submit">
           Remove
         </button>
       </div>
@@ -52,10 +53,7 @@ function ViewProfile() {
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox"></Form.Group>
         <button className="updateBtn" variant="primary" type="submit">
-          Update
-        </button>
-        <button className="editBtn" variant="primary" type="submit">
-          Edit Profile
+          Save Changes
         </button>
       </Form>
     </div>
