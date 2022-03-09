@@ -28,6 +28,7 @@ function App() {
   }, [user]);
 
   console.log(user);
+
   return (
     <div className="app">
       <Layout>
@@ -42,6 +43,10 @@ function App() {
               <Route
                 path="/ViewProfile"
                 element={<ViewProfile logout={() => setUser(false)} />}
+              />
+              <Route
+                path="/Login"
+                element={<Login authenticate={() => setUser(true)} />}
               />
             </>
           )}

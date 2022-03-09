@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Axios from "axios";
@@ -8,6 +8,7 @@ function Login({ authenticate }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loginStatus, setLoginStatus] = useState("");
+  const [userData, setUserData] = useState([]);
 
   const navigate = useNavigate();
 
@@ -38,7 +39,9 @@ function Login({ authenticate }) {
         //navigate("/Home");
         console.log(response.data[0].username);
         console.log(response.data[0]);
+        setUserData(response.data);
         authenticate();
+        console.log("userData: ", userData);
         //getAll();
       }
     });
@@ -48,6 +51,7 @@ function Login({ authenticate }) {
     <div className="loginContainer">
       <div className="formContainer">
         <h2>Welcome Back!</h2>
+
         <>
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -56,6 +60,8 @@ function Login({ authenticate }) {
                 type="email"
                 placeholder="Enter email"
                 onChange={(e) => {
+                  //this below stops the function from reloading the page
+                  //e.preventDefault();
                   setEmail(e.target.value);
                 }}
               />
@@ -70,6 +76,8 @@ function Login({ authenticate }) {
                 type="password"
                 placeholder="Password"
                 onChange={(e) => {
+                  //this below stops the function from reloading the page
+                  e.preventDefault();
                   setPassword(e.target.value);
                 }}
               />
@@ -90,6 +98,26 @@ function Login({ authenticate }) {
           </Button>
           <div>{loginStatus}</div>
         </>
+        {userData.map((user, idx) => {
+          return (
+            <p key={idx}>
+              {user.user_id}, {user.username}, {user.firstName}, {user.lastName}
+              , {user.password}
+            </p>
+          );
+
+          //(
+          //  <ul key={idx}>
+          //    <li>{user.username}</li>
+          //    <li>{user.user_id}</li>
+          //    <li>{user.email}</li>
+          //    <li>{user.firstName}</li>
+          //    <li>{user.lastName}</li>
+          //  </ul>
+          //);
+
+          //<p key={idx}>{user.user_id}</p>;
+        })}
       </div>
     </div>
   );
